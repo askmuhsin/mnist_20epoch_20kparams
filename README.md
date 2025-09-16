@@ -5,6 +5,60 @@
 
 ---
 
+## ✅ **CONSTRAINT VERIFICATION**
+
+### 📊 **Total Parameter Count: 19,306 < 20,000** ✓
+- **Enhanced CNN Architecture**: 19,306 parameters (96.5% of budget)
+- Evidence: [Model parameter summary](src/models/cnn.py) | [Training logs](src/training_notebook_fixed.ipynb)
+
+### 🧩 **Batch Normalization: Used** ✓
+- **Implementation**: BatchNorm2d after every convolution layer
+- **Impact**: Stable training and faster convergence
+- Evidence: [Architecture code](src/models/cnn.py#L15-L45) showing BN layers
+
+### 🎲 **Dropout: 0.05 (Optimized)** ✓
+- **Location**: Before final classification layer
+- **Optimization**: Tested 0.01, 0.05, 0.1+ → 0.05 optimal
+- Evidence: [MLflow experiments](mlflow_summary.csv) comparing dropout values
+
+### 🎯 **Global Average Pooling (GAP): Used** ✓
+- **Implementation**: GAP → Dropout(0.05) → FC(36→10)
+- **Benefit**: Reduces parameters vs fully connected layers
+- Evidence: [Model architecture](src/models/cnn.py#L47-L49)
+
+## 📊 **Training Progress - Epoch by Epoch**
+
+### Validation Loss & Accuracy (Epochs 1-20)
+```
+Epoch  1/20 | LR: 0.003000 | Val Loss: 0.0631 | Val Acc: 0.9820
+Epoch  2/20 | LR: 0.003000 | Val Loss: 0.0801 | Val Acc: 0.9765
+Epoch  3/20 | LR: 0.003000 | Val Loss: 0.0528 | Val Acc: 0.9846
+Epoch  4/20 | LR: 0.003000 | Val Loss: 0.0316 | Val Acc: 0.9907
+Epoch  5/20 | LR: 0.000990 | Val Loss: 0.0335 | Val Acc: 0.9902
+Epoch  6/20 | LR: 0.000990 | Val Loss: 0.0222 | Val Acc: 0.9939
+Epoch  7/20 | LR: 0.000990 | Val Loss: 0.0243 | Val Acc: 0.9931
+Epoch  8/20 | LR: 0.000990 | Val Loss: 0.0209 | Val Acc: 0.9943
+Epoch  9/20 | LR: 0.000990 | Val Loss: 0.0238 | Val Acc: 0.9931
+Epoch 10/20 | LR: 0.000990 | Val Loss: 0.0239 | Val Acc: 0.9927
+Epoch 11/20 | LR: 0.000990 | Val Loss: 0.0246 | Val Acc: 0.9928
+Epoch 12/20 | LR: 0.000327 | Val Loss: 0.0229 | Val Acc: 0.9938
+Epoch 13/20 | LR: 0.000327 | Val Loss: 0.0195 | Val Acc: 0.9942
+Epoch 14/20 | LR: 0.000327 | Val Loss: 0.0199 | Val Acc: 0.9942
+Epoch 15/20 | LR: 0.000327 | Val Loss: 0.0195 | Val Acc: 0.9946
+Epoch 16/20 | LR: 0.000327 | Val Loss: 0.0195 | Val Acc: 0.9946
+Epoch 17/20 | LR: 0.000327 | Val Loss: 0.0206 | Val Acc: 0.9947
+Epoch 18/20 | LR: 0.000108 | Val Loss: 0.0210 | Val Acc: 0.9942
+Epoch 19/20 | LR: 0.000108 | Val Loss: 0.0200 | Val Acc: 0.9947
+Epoch 20/20 | LR: 0.000108 | Val Loss: 0.0194 | Val Acc: 0.9949
+```
+
+**Key Observations**:
+- 4-phase LR schedule: 0.003→0.001→0.0003→0.0001 at epochs 5,12,18
+- Peak accuracy: **99.49%** at epoch 20
+- Consistent improvement with each LR reduction
+
+---
+
 ## 📊 **Critical Success Factors**
 
 ### **Batch Size Impact** ⭐
