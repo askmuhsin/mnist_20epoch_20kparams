@@ -1,0 +1,3 @@
+dropout: 0.05
+learning_rate: 0.0015
+weight_decay: 0

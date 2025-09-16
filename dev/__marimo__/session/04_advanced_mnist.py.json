@@ -1,0 +1,250 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.15.3"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "7f1f75bd29e95490bd598d349f98c829",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "d2406ec6db4dea76e53f2469f6e66309",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "1a678aec656eebda8b8648cef3c9a8fa",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Total parameters: 17758\n\nLayer-wise parameter breakdown:\nconv1.weight: 72 params\nconv1.bias: 8 params\nbn1.weight: 8 params\nbn1.bias: 8 params\ntrans1_1.weight: 128 params\ntrans1_1.bias: 16 params\nbn1_1.weight: 16 params\nbn1_1.bias: 16 params\ntrans1_2.weight: 256 params\ntrans1_2.bias: 16 params\nbn1_2.weight: 16 params\nbn1_2.bias: 16 params\nconv2.weight: 2880 params\nconv2.bias: 20 params\nbn2.weight: 20 params\nbn2.bias: 20 params\ntrans2_1.weight: 560 params\ntrans2_1.bias: 28 params\nbn2_1.weight: 28 params\nbn2_1.bias: 28 params\ntrans2_2.weight: 784 params\ntrans2_2.bias: 28 params\nbn2_2.weight: 28 params\nbn2_2.bias: 28 params\nconv3.weight: 9072 params\nconv3.bias: 36 params\nbn3.weight: 36 params\nbn3.bias: 36 params\ntrans3_1.weight: 1584 params\ntrans3_1.bias: 44 params\nbn3_1.weight: 44 params\nbn3_1.bias: 44 params\ntrans3_2.weight: 1408 params\ntrans3_2.bias: 32 params\nbn3_2.weight: 32 params\nbn3_2.bias: 32 params\nfc.weight: 320 params\nfc.bias: 10 params\n"
+        }
+      ]
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "30f4160d40425bf77608b44f044e2d9f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Train set: 50000 samples\nVal set: 10000 samples\nTest set: 10000 samples\n"
+        }
+      ]
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "a99015aba8bae7133f4b7046d5282196",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Using device: mps\n"
+        }
+      ]
+    },
+    {
+      "id": "PKri",
+      "code_hash": "fa120b8d01f8723313dee58d2a7faf0a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "0e0932caebd081a315e5d5ca0555d33c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 1/20\nTrain Loss: 0.8796, Train Acc: 81.35%\nVal Loss: 0.2194, Val Acc: 96.35%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 2/20\nTrain Loss: 0.1518, Train Acc: 97.16%\nVal Loss: 0.1355, Val Acc: 96.77%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 3/20\nTrain Loss: 0.0919, Train Acc: 97.83%\nVal Loss: 0.0711, Val Acc: 98.19%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 4/20\nTrain Loss: 0.0687, Train Acc: 98.30%\nVal Loss: 0.0589, Val Acc: 98.36%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 5/20\nTrain Loss: 0.0581, Train Acc: 98.45%\nVal Loss: 0.0628, Val Acc: 98.16%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 6/20\nTrain Loss: 0.0496, Train Acc: 98.61%\nVal Loss: 0.0412, Val Acc: 98.74%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 7/20\nTrain Loss: 0.0451, Train Acc: 98.67%\nVal Loss: 0.0385, Val Acc: 98.93%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 8/20\nTrain Loss: 0.0401, Train Acc: 98.83%\nVal Loss: 0.0787, Val Acc: 97.49%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 9/20\nTrain Loss: 0.0377, Train Acc: 98.91%\nVal Loss: 0.0304, Val Acc: 99.17%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 10/20\nTrain Loss: 0.0324, Train Acc: 99.03%\nVal Loss: 0.0272, Val Acc: 99.23%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 11/20\nTrain Loss: 0.0317, Train Acc: 99.03%\nVal Loss: 0.0328, Val Acc: 99.02%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 12/20\nTrain Loss: 0.0306, Train Acc: 99.10%\nVal Loss: 0.0336, Val Acc: 98.98%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 13/20\nTrain Loss: 0.0282, Train Acc: 99.11%\nVal Loss: 0.0313, Val Acc: 99.12%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 14/20\nTrain Loss: 0.0269, Train Acc: 99.21%\nVal Loss: 0.0348, Val Acc: 98.85%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 15/20\nTrain Loss: 0.0253, Train Acc: 99.24%\nVal Loss: 0.0286, Val Acc: 99.17%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 16/20\nTrain Loss: 0.0229, Train Acc: 99.29%\nVal Loss: 0.0278, Val Acc: 99.15%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 17/20\nTrain Loss: 0.0224, Train Acc: 99.31%\nVal Loss: 0.0272, Val Acc: 99.17%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 18/20\nTrain Loss: 0.0225, Train Acc: 99.30%\nVal Loss: 0.0461, Val Acc: 98.61%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 19/20\nTrain Loss: 0.0220, Train Acc: 99.28%\nVal Loss: 0.0283, Val Acc: 99.20%\n--------------------------------------------------\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Epoch 20/20\nTrain Loss: 0.0192, Train Acc: 99.38%\nVal Loss: 0.0298, Val Acc: 99.13%\n--------------------------------------------------\n"
+        }
+      ]
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "bd9b448b49ff6535496ae24033b9c0e5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Training Summary:\nFinal Train Accuracy: 99.38%\nFinal Val Accuracy: 99.13%\nBest Val Accuracy: 99.23%\nImprovement over baseline: 2.61%\n"
+        }
+      ]
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "68b329da9893e34099c7d8ad5cb9c940",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

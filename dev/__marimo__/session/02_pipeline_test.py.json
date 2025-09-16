@@ -7,88 +7,35 @@
     {
       "id": "Hbol",
       "code_hash": "986b6054f47bb435c4ac796689ba7561",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "MJUe",
       "code_hash": "092ec646a76d67e6c0f62bc12d1d2b12",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stderr",
-          "text": "pytest is required pytest is required for reactive testing. Please report to github if you would like a different testing suite supported..\n\n\u001b[33m[W 250914 20:33:05 compiler:248]\u001b(B\u001b[m pytest is not installed, skipping assertion rewriting\n"
-        }
-      ]
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "5f1102361bc768749ccd1a3ed0843b8e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "1f367013af32546850f6f1fd4f992627",
+      "outputs": [],
+      "console": []
     },
     {
       "id": "lEQa",
-      "code_hash": "5f1102361bc768749ccd1a3ed0843b8e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "code_hash": "30b296c7727b77dd33dc1c9f33b7b5f3",
+      "outputs": [],
       "console": []
     },
     {
       "id": "PKri",
-      "code_hash": "98055b29457c473530e703d4e6ab87c1",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Epoch 0, Loss: 0.3286\nEpoch 5, Loss: 0.2204\nEpoch 10, Loss: 0.1521\nEpoch 15, Loss: 0.1075\n"
-        }
-      ]
-    },
-    {
-      "id": "Xref",
-      "code_hash": "5e291270ae1f61738ce257013b6c927d",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Initial loss: 0.3286\nFinal loss: 0.0826\nLoss decreased: True\n"
-        }
-      ]
-    },
-    {
-      "id": "ZOVb",
       "code_hash": null,
       "outputs": [],
       "console": []
